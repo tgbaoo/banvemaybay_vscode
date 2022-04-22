@@ -2,18 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package javaproject;
+// package javaproject;
 
 /**
  *
  * @author hp
  */
-public class ChiTietKhuyenMaiDTO {
+public class CTKhuyenMaiDTO {
     private String maKM;
     private String maLoaiVe;
     private double phanTramKM;
 
-    public ChiTietKhuyenMaiDTO() {
+    public CTKhuyenMaiDTO() {
 
     }
 
