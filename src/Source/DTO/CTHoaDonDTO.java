@@ -1,4 +1,4 @@
-package DTO;
+package Source.DTO;
 
 public class CTHoaDonDTO {
     private String maHD;

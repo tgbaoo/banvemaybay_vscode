@@ -1,56 +1,56 @@
-package DTO;
+package Source.DTO;
 import java.util.Objects;
 
 public class ChuyenBayDTO {
-    private String maChuyenBay;
-    private String maTuyenBay;
-    private String maMayBay;
-    private int soLgVeConLai;
+    private int maChuyenBay;
+    private int maTuyenBay;
+    private int maMayBay;
+    private int veCL;
     private String ngayCatCanh;
     private String ngayHaCanh;
 
     public ChuyenBayDTO() {
     }
 
-    public ChuyenBayDTO(String maChuyenBay, String maTuyenBay, String maMayBay, int soLgVeConLai, String ngayCatCanh, String ngayHaCanh) {
+    public ChuyenBayDTO(int maChuyenBay, int maTuyenBay, int maMayBay, int veCL, String ngayCatCanh, String ngayHaCanh) {
         this.maChuyenBay = maChuyenBay;
         this.maTuyenBay = maTuyenBay;
         this.maMayBay = maMayBay;
-        this.soLgVeConLai = soLgVeConLai;
+        this.veCL = veCL;
         this.ngayCatCanh = ngayCatCanh;
         this.ngayHaCanh = ngayHaCanh;
     }
 
-    public String getMaChuyenBay() {
+    public int getMaChuyenBay() {
         return this.maChuyenBay;
     }
 
-    public void setMaChuyenBay(String maChuyenBay) {
+    public void setMaChuyenBay(int maChuyenBay) {
         this.maChuyenBay = maChuyenBay;
     }
 
-    public String getMaTuyenBay() {
+    public int getMaTuyenBay() {
         return this.maTuyenBay;
     }
 
-    public void setMaTuyenBay(String maTuyenBay) {
+    public void setMaTuyenBay(int maTuyenBay) {
         this.maTuyenBay = maTuyenBay;
     }
 
-    public String getMaMayBay() {
+    public int getMaMayBay() {
         return this.maMayBay;
     }
 
-    public void setMaMayBay(String maMayBay) {
+    public void setMaMayBay(int maMayBay) {
         this.maMayBay = maMayBay;
     }
 
-    public int getSoLgVeConLai() {
-        return this.soLgVeConLai;
+    public int getVeCL() {
+        return this.veCL;
     }
 
-    public void setSoLgVeConLai(int soLgVeConLai) {
-        this.soLgVeConLai = soLgVeConLai;
+    public void setVeCL(int veCL) {
+        this.veCL = veCL;
     }
 
     public String getNgayCatCanh() {
@@ -69,23 +69,23 @@ public class ChuyenBayDTO {
         this.ngayHaCanh = ngayHaCanh;
     }
 
-    public ChuyenBayDTO maChuyenBay(String maChuyenBay) {
+    public ChuyenBayDTO maChuyenBay(int maChuyenBay) {
         setMaChuyenBay(maChuyenBay);
         return this;
     }
 
-    public ChuyenBayDTO maTuyenBay(String maTuyenBay) {
+    public ChuyenBayDTO maTuyenBay(int maTuyenBay) {
         setMaTuyenBay(maTuyenBay);
         return this;
     }
 
-    public ChuyenBayDTO maMayBay(String maMayBay) {
+    public ChuyenBayDTO maMayBay(int maMayBay) {
         setMaMayBay(maMayBay);
         return this;
     }
 
-    public ChuyenBayDTO soLgVeConLai(int soLgVeConLai) {
-        setSoLgVeConLai(soLgVeConLai);
+    public ChuyenBayDTO veCL(int veCL) {
+        setVeCL(veCL);
         return this;
     }
 
@@ -107,12 +107,12 @@ public class ChuyenBayDTO {
             return false;
         }
         ChuyenBayDTO chuyenBayDTO = (ChuyenBayDTO) o;
-        return Objects.equals(maChuyenBay, chuyenBayDTO.maChuyenBay) && Objects.equals(maTuyenBay, chuyenBayDTO.maTuyenBay) && Objects.equals(maMayBay, chuyenBayDTO.maMayBay) && soLgVeConLai == chuyenBayDTO.soLgVeConLai && Objects.equals(ngayCatCanh, chuyenBayDTO.ngayCatCanh) && Objects.equals(ngayHaCanh, chuyenBayDTO.ngayHaCanh);
+        return Objects.equals(maChuyenBay, chuyenBayDTO.maChuyenBay) && Objects.equals(maTuyenBay, chuyenBayDTO.maTuyenBay) && Objects.equals(maMayBay, chuyenBayDTO.maMayBay) && veCL == chuyenBayDTO.veCL && Objects.equals(ngayCatCanh, chuyenBayDTO.ngayCatCanh) && Objects.equals(ngayHaCanh, chuyenBayDTO.ngayHaCanh);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(maChuyenBay, maTuyenBay, maMayBay, soLgVeConLai, ngayCatCanh, ngayHaCanh);
+        return Objects.hash(maChuyenBay, maTuyenBay, maMayBay, veCL, ngayCatCanh, ngayHaCanh);
     }
 
     @Override
@@ -121,9 +121,10 @@ public class ChuyenBayDTO {
             " maChuyenBay='" + getMaChuyenBay() + "'" +
             ", maTuyenBay='" + getMaTuyenBay() + "'" +
             ", maMayBay='" + getMaMayBay() + "'" +
-            ", soLgVeConLai='" + getSoLgVeConLai() + "'" +
+            ", veCL='" + getVeCL() + "'" +
             ", ngayCatCanh='" + getNgayCatCanh() + "'" +
             ", ngayHaCanh='" + getNgayHaCanh() + "'" +
             "}";
     }
+
 }

@@ -1,15 +1,15 @@
-package DTO;
+package Source.DTO;
 import java.util.Objects;
 
 public class LoaiVeDTO {
 	private String maLoaiVe;
 	private String tenLoaiVe;
-	private String donGia;
+	private int donGia;
 
 	public LoaiVeDTO() {
 	}
 
-	public LoaiVeDTO(String maLoaiVe, String tenLoaiVe, String donGia) {
+	public LoaiVeDTO(String maLoaiVe, String tenLoaiVe, int donGia) {
 		this.maLoaiVe = maLoaiVe;
 		this.tenLoaiVe = tenLoaiVe;
 		this.donGia = donGia;
@@ -31,11 +31,11 @@ public class LoaiVeDTO {
 		this.tenLoaiVe = tenLoaiVe;
 	}
 
-	public String getDonGia() {
+	public int getDonGia() {
 		return this.donGia;
 	}
 
-	public void setDonGia(String donGia) {
+	public void setDonGia(int donGia) {
 		this.donGia = donGia;
 	}
 
@@ -49,7 +49,7 @@ public class LoaiVeDTO {
 		return this;
 	}
 
-	public LoaiVeDTO donGia(String donGia) {
+	public LoaiVeDTO donGia(int donGia) {
 		setDonGia(donGia);
 		return this;
 	}

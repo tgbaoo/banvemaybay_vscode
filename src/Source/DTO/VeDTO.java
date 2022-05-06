@@ -1,4 +1,4 @@
-package DTO;
+package Source.DTO;
 import java.util.Objects;
 
 public class VeDTO {
